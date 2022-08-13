@@ -54,19 +54,19 @@ export default {
         {
           title: `Proud of myself`,
           artist: `YoungBoy `,
-          song_id: `01`,
+          song_id: `10`,
           img_url:  ` https://i.scdn.co/image/ab67616d0000b2736fff08fad874ee9936489d09   `,
         },
         {
           title: `Fire and desire`,
           artist: `Drake`,
-          song_id: `02`,
+          song_id: `20`,
           img_url: `https://i1.sndcdn.com/artworks-Z19d1jdImMbt-0-t500x500.jpg`,
         },
         {
           title: `Keeper`,
           artist: `Toosii`,
-          song_id: `03`,
+          song_id: `30`,
           img_url: ` https://i1.sndcdn.com/artworks-yttGkz8AYKPb-0-t500x500.jpg `,
         },
       ],
