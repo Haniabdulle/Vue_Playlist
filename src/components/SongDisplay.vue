@@ -82,9 +82,9 @@ export default {
 
 <style scoped>
 section {
-  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 20px;
+  display: grid
+  
 }
 img {
   width: 200px;
