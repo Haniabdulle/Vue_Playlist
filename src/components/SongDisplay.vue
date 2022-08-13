@@ -27,29 +27,26 @@
 export default {
   
   methods: {
-    /* When user chose a song*/
+    /* Users song chose details  */
     ChosenMusic(details) {
       this.song_being_listened = true;
       /* Song ID */
       let song_id = details[`target`].getAttribute(`song_id`);
-      
       for(let i = 0; i < this.songs.length; i++) {
-       
-        /* Goes into object of array if the song matches = the song the user has chosen */
-
         if(this.songs[i][`song_id`] === song_id) {
           /* getting the div tag bby its class name */
             let chosen_music = document.querySelector(`.chosen_music`);
             /* inserting onto the page informatio of the chosen music */
             chosen_music[`innerHTML`] = `
-            <h1>Listening to</h1>
-            <h2>${this.songs[i][`title`]}</h2>
+            <h2>Listening to</h2>
+            <h3>${this.songs[i][`title`]}</h3>
             <img src="${this.songs[i][`img_url`]}">
             `
         }
       }
     },
   },
+
   data() {
     return {
       /* Telling user to pick a song */
