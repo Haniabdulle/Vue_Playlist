@@ -34,9 +34,7 @@ export default {
       let song_id = details[`target`].getAttribute(`song_id`);
       for(let i = 0; i < this.songs.length; i++) {
         if(this.songs[i][`song_id`] === song_id) {
-          /* getting the div tag bby its class name */
             let chosen_music = document.querySelector(`.chosen_music`);
-            /* inserting onto the page informatio of the chosen music */
             chosen_music[`innerHTML`] = `
             <h2>Listening to</h2>
             <h3>${this.songs[i][`title`]}</h3>
